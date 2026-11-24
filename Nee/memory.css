@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #fffbe0 0%, #f7e7ab 50%, #f3dc8d 100%);
+    color: #3e2723;
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+}
+
+/* STICKY TOP RIBBON */
+.top-ribbon {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #6b1d2f;
+    padding: 10px 24px;
+    border-bottom: 2px dashed #f7efe6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.ribbon-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    color: #fff8e7;
+    text-decoration: none;
+    font-size: 15px;
+    transition: opacity 0.2s ease;
+}
+
+.back-btn:hover {
+    opacity: 0.8;
+}
+
+.door-tag {
+    color: #f5e29e;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* MAIN SCROLLABLE CONTAINER */
+.page-content {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 50px 20px 80px 20px;
+}
+
+/* INTRO */
+.intro-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    font-family: 'Alex Brush', cursive;
+    font-size: 86px;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1;
+    color: #3e2723;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #5d4037;
+    margin-top: 8px;
+}
+
+/* VINTAGE LETTER CARD */
+.letter-card {
+    background-color: #fffdf6;
+    border: 1.5px solid #d5c29d;
+    border-radius: 8px;
+    padding: 36px 40px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    line-height: 1.85;
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+
+.letter-date {
+    font-size: 14px;
+    color: #8b5a2b;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.letter-sign {
+    font-family: 'Alex Brush', cursive;
+    font-size: 38px;
+    margin: 24px 0 0 0;
+    color: #3e2723;
+}
+
+/* MEMORIES PHOTO ROW */
+.memories-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    font-family: 'Alex Brush', cursive;
+    font-size: 58px;
+    font-weight: normal;
+    margin: 0 0 28px 0;
+}
+
+.photo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+.polaroid {
+    width: 210px;
+    padding: 10px 10px 16px 10px;
+    background-color: #f5ebd6;
+    border: 1px solid #dfd0b2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+    transition: transform 0.25s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    font-family: 'Alex Brush', cursive;
+    font-size: 26px;
+    margin: 10px 0 0 0;
+    color: #3e2723;
+}
+
+.tilt-left { transform: rotate(-3deg); }
+.tilt-right { transform: rotate(3deg); }
+
+.polaroid:hover {
+    transform: translateY(-5px) rotate(0deg) scale(1.03);
+}
+
+/* BOTTOM NAVIGATION */
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px dashed #bfa880;
+}
+
+.nav-pill {
+    text-decoration: none;
+    color: #3e2723;
+    background-color: #fffdf6;
+    border: 1.5px solid #c9b796;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-pill:hover {
+    background-color: #fff6d6;
+    transform: translateY(-2px);
+}
